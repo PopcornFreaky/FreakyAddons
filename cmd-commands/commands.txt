@@ -1,0 +1,6 @@
+
+// builds project
+gradlew build
+
+// run mod with client
+gradlew runClient
