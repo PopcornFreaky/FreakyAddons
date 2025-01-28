@@ -1,6 +1,5 @@
-package com.mod.SkyTox.GUI;
+package com.mod.FreakyAddons.GUI;
 
-import com.mod.SkyTox.Utils.MobSelector;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.Configuration;

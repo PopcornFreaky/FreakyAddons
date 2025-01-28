@@ -1,4 +1,4 @@
-package com.mod.SkyTox.Utils;
+package com.mod.FreakyAddons.Utils;
 
 import java.util.HashSet;
 import java.util.Set;

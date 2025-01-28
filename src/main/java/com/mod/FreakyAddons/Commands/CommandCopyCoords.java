@@ -1,4 +1,4 @@
-package com.mod.SkyTox.Commands;
+package com.mod.FreakyAddons.Commands;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;

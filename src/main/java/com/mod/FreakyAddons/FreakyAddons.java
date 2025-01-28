@@ -1,9 +1,9 @@
-package com.mod.SkyTox;
+package com.mod.FreakyAddons;
 
-import com.mod.SkyTox.Commands.CommandCopyCoords;
-import com.mod.SkyTox.Commands.CommandFreezeTime;
-import com.mod.SkyTox.Commands.CommandSkytox;
-import com.mod.SkyTox.Handlers.MobHighlightHandler;
+import com.mod.FreakyAddons.Commands.CommandCopyCoords;
+import com.mod.FreakyAddons.Commands.CommandFreezeTime;
+import com.mod.FreakyAddons.Commands.CommandSkytox;
+import com.mod.FreakyAddons.Handlers.MobHighlightHandler;
 import net.minecraftforge.client.ClientCommandHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
@@ -14,10 +14,10 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import java.io.File;
 
-@Mod(modid = SkyTox.MODID, version = SkyTox.VERSION)
-public class SkyTox
+@Mod(modid = FreakyAddons.MODID, version = FreakyAddons.VERSION)
+public class FreakyAddons
 {
-    public static final String MODID = "SkyTox";
+    public static final String MODID = "FreakyAddons";
     public static final String VERSION = "1.0";
     private Configuration config;
 

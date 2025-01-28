@@ -1,6 +1,5 @@
-package com.mod.SkyTox.Handlers;
+package com.mod.FreakyAddons.Handlers;
 
-import com.mod.SkyTox.Utils.MobSelector;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.entity.RenderManager;

@@ -1,12 +1,11 @@
-package com.mod.SkyTox.Commands;
+package com.mod.FreakyAddons.Commands;
 
-import com.mod.SkyTox.GUI.SettingsGui;
+import com.mod.FreakyAddons.GUI.SettingsGui;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityOtherPlayerMP;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.entity.Entity;
-import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.common.config.Configuration;
