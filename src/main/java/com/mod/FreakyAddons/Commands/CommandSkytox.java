@@ -55,12 +55,6 @@ public class CommandSkytox extends CommandBase {
                     sender.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "Usage: /skytox turnon players"));
                 }
                 break;
-            case "gui":
-                Minecraft.getMinecraft().addScheduledTask(() -> {
-                    Minecraft.getMinecraft().displayGuiScreen(new SettingsGui(Minecraft.getMinecraft().currentScreen, config));
-                });
-                sender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "Opening SkyTox GUI..."));
-                break;
             default:
                 sender.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "Unknown subcommand!"));
         }

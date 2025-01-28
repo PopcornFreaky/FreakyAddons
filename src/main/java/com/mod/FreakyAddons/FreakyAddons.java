@@ -1,6 +1,7 @@
 package com.mod.FreakyAddons;
 
 import com.mod.FreakyAddons.Commands.CommandCopyCoords;
+import com.mod.FreakyAddons.Commands.CommandFAGui;
 import com.mod.FreakyAddons.Commands.CommandFreezeTime;
 import com.mod.FreakyAddons.Commands.CommandSkytox;
 import com.mod.FreakyAddons.Handlers.MobHighlightHandler;
@@ -11,6 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 
 import java.io.File;
 
@@ -46,12 +48,16 @@ public class FreakyAddons
 
         // Register event handlers
         MinecraftForge.EVENT_BUS.register(new MobHighlightHandler());
-
         // Register commands
         ClientCommandHandler.instance.registerCommand(new CommandSkytox(config));
         ClientCommandHandler.instance.registerCommand(new CommandCopyCoords());
         ClientCommandHandler.instance.registerCommand(new CommandFreezeTime());
 
 
+    }
+
+    @Mod.EventHandler
+    public void onServerStarting(FMLServerStartingEvent event) {
+        event.registerServerCommand(new CommandFAGui());
     }
 }

@@ -27,16 +27,22 @@ public class CommandFreezeTime extends CommandBase {
     public String getCommandUsage(ICommandSender sender) {
         return "/freezetime - Toggles always night mode (client-side)";
     }
+    public static void toggleNightMode(ICommandSender sender) {
+        isNightTime = !isNightTime;
+
+        if (sender != null) {
+            if (isNightTime) {
+                sender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "Time is now set to always night (client-side)."));
+            } else {
+                sender.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "Time is no longer forced (client-side)."));
+            }
+        }
+    }
+
 
     @Override
     public void processCommand(ICommandSender sender, String[] args) {
-        isNightTime = !isNightTime;
-
-        if (isNightTime) {
-            sender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "Time is now set to always night (client-side)."));
-        } else {
-            sender.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "Time is no longer forced (client-side)."));
-        }
+        toggleNightMode(sender);
     }
 
     @SubscribeEvent
